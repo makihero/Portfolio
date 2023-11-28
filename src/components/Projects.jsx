@@ -16,6 +16,7 @@ export const Projects = () => {
 
     const projects = [
         {
+          id: 1,
           title: "API Movie App",
           description: "Design & Development",
           imgUrl: projImg1,
