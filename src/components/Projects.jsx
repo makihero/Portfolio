@@ -1,5 +1,6 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import { BrowserRouter as Router } from "react-router-dom";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
@@ -20,37 +21,37 @@ export const Projects = () => {
           title: "API Movie App",
           description: "Design & Development",
           imgUrl: projImg1,
-          url:"https://apimovieapp.netlify.app/"
+          url:"https://movie-app-snowy-zeta.vercel.app/"
         },
         {
           title: "API Pokedex App",
           description: "Design & Development",
           imgUrl: projImg2,
-          url:"https://apimovieapp.netlify.app/"
+          url:"https://pokedex-beryl-kappa.vercel.app/"
         },
         {
           title: "Deezer Clone",
           description: "Design & Development",
           imgUrl: projImg3,
-          url:"https://apimovieapp.netlify.app/"
+          url:"https://deezer-clone-ashy.vercel.app/"
         },
         {
           title: "API Pokemon Evolution",
           description: "Design & Development",
           imgUrl: projImg4,
-          url:"https://apimovieapp.netlify.app/"
+          url:"https://pokemon-evolutions-nvbp.vercel.app/"
         },
         {
           title: "DuckHunt Game",
           description: "Design & Development",
           imgUrl: projImg5,
-          url:"https://apimovieapp.netlify.app/"
+          url:"https://duck-hunt-zeta.vercel.app/"
         },
         {
           title: "Google Clone",
           description: "Design & Development",
           imgUrl: projImg6,
-          url:"https://apimovieapp.netlify.app/"
+          url:"https://clone-google-one-kappa.vercel.app/"
         },
       ];
 
@@ -59,30 +60,31 @@ export const Projects = () => {
           title: "Batabit",
           description: "Design & Development",
           imgUrl: projImg7,
-          url:"https://apimovieapp.netlify.app/"
+          url:"https://batabit-two.vercel.app/"
         },
         {
           title: "Food Web",
           description: "Design & Development",
           imgUrl: projImg8,
-          url:"https://apimovieapp.netlify.app/"
+          url:"https://project-food-eosin.vercel.app/"
         },
         {
           title: "Calculator",
           description: "Design & Development",
           imgUrl: projImg9,
-          url:"https://apimovieapp.netlify.app/"
+          url:"https://calculator-js-pi.vercel.app/"
         },
         {
           title: "App Web",
           description: "Design & Development",
           imgUrl: projImg10,
-          url:"https://apimovieapp.netlify.app/"
+          url:"https://web-tributo-theta.vercel.app/"
         }
       ]
 
     return (
-        <section className="project" id="projects">
+      <Router>
+                <section className="project" id="projects">
             <Container>
                 <Row>
                     <Col>
@@ -127,5 +129,6 @@ export const Projects = () => {
             </Container>
             <img className="background-image-right" src={colorSharp2} alt=""/>
         </section>
+      </Router>
     );
 }
